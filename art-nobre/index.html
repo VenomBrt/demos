@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Art Nobre Interiores — ambientes completos em Rio Verde, GO</title>
+<meta name="description" content="Móveis planejados, cortinas, persianas, papel de parede, cabeceiras e tapetes. Um só time cuidando do ambiente inteiro, com curadoria, em Rio Verde — GO.">
+<meta name="theme-color" content="#F4EFE7">
+<meta name="robots" content="noindex,nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#F4EFE7;
+  --paper-2:#EAE2D6;
+  --ink:#201A16;
+  --ink-2:#4A4038;
+  --ink-3:#7A6D61;
+  --clay:#9C5A3C;
+  --clay-2:#B4703F;
+  --line:rgba(32,26,22,.14);
+  --line-2:rgba(32,26,22,.08);
+  --wp:#25D366;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-weight:400;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+
+/* ---------- barra superior ---------- */
+.topbar{
+  border-bottom:1px solid var(--line-2);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);
+}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:11px 0}
+.topbar b{font-weight:500;color:var(--ink-2)}
+.topbar a:hover{color:var(--clay)}
+
+/* ---------- navegação ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(244,239,231,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-2)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:24px}
+.brand{display:flex;flex-direction:column;line-height:1.1}
+.brand strong{font-family:var(--serif);font-size:26px;font-weight:400;letter-spacing:.01em}
+.brand span{font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-3);margin-top:5px}
+.nav nav{display:flex;gap:34px;font-size:13.5px;letter-spacing:.02em}
+.nav nav a{color:var(--ink-2);position:relative;padding:4px 0}
+.nav nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--clay);transition:width .35s ease}
+.nav nav a:hover::after{width:100%}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;border-radius:2px;
+  padding:13px 22px;font-size:13.5px;font-weight:500;letter-spacing:.02em;
+  background:var(--ink);color:var(--paper);transition:transform .25s ease,background .25s ease;
+}
+.btn:hover{background:var(--clay);transform:translateY(-1px)}
+.btn svg{width:15px;height:15px;flex:none}
+
+/* ---------- hero ---------- */
+.hero{padding:0 0 0;position:relative}
+.hero-grid{display:grid;grid-template-columns:0.92fr 1.08fr;min-height:min(78vh,720px)}
+.hero-txt{
+  display:flex;flex-direction:column;justify-content:center;gap:26px;
+  padding:72px 56px 72px 0;
+}
+.eyebrow{
+  display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--clay);
+}
+.eyebrow::before{content:"";width:38px;height:1px;background:var(--clay);opacity:.5}
+h1{
+  font-family:var(--serif);font-weight:400;font-size:clamp(2.7rem,5.1vw,4.9rem);
+  line-height:.98;letter-spacing:-.015em;
+}
+h1 em{font-style:italic;color:var(--clay)}
+.lead{font-size:clamp(15px,1.15vw,17.5px);color:var(--ink-2);max-width:44ch;line-height:1.65}
+.hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:4px}
+.link-quiet{
+  font-size:13.5px;letter-spacing:.02em;color:var(--ink-2);
+  border-bottom:1px solid var(--line);padding-bottom:3px;transition:color .25s,border-color .25s;
+}
+.link-quiet:hover{color:var(--clay);border-color:var(--clay)}
+.hero-photo{position:relative;overflow:hidden;background:var(--paper-2)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(32,26,22,0) 55%,rgba(32,26,22,.22) 100%)}
+.hero-badge{
+  position:absolute;left:0;bottom:0;background:var(--paper);
+  padding:22px 30px;display:flex;align-items:center;gap:18px;z-index:2;
+}
+.hero-badge .n{font-family:var(--serif);font-size:38px;line-height:1}
+.hero-badge .t{font-size:11.5px;line-height:1.5;color:var(--ink-3);letter-spacing:.03em}
+.hero-badge .t b{display:block;color:var(--ink);font-weight:600}
+
+/* ---------- prova ---------- */
+.prova{border-block:1px solid var(--line-2)}
+.prova .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-2)}
+.prova div{background:var(--paper);padding:26px 22px}
+.prova .k{font-family:var(--serif);font-size:30px;line-height:1;display:block;margin-bottom:6px}
+.prova .l{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+
+/* ---------- seções ---------- */
+section{scroll-margin-top:90px}
+.sec{padding:104px 0}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:56px}
+.sec-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.1rem,3.6vw,3.3rem);line-height:1.02;letter-spacing:-.01em}
+.sec-head p{color:var(--ink-2);font-size:15.5px;max-width:46ch;justify-self:end}
+.num{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--clay);display:block;margin-bottom:18px}
+
+/* ---------- camadas (lista editorial) ---------- */
+.camadas{border-top:1px solid var(--line)}
+.camada{
+  display:grid;grid-template-columns:64px 1.1fr 1.5fr 28px;gap:28px;align-items:baseline;
+  padding:30px 0;border-bottom:1px solid var(--line);transition:background .3s ease,padding-left .3s ease;
+}
+.camada:hover{background:rgba(156,90,60,.045);padding-left:14px}
+.camada .idx{font-family:var(--serif);font-size:17px;color:var(--clay)}
+.camada h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.35rem,2vw,1.75rem);line-height:1.15}
+.camada p{color:var(--ink-2);font-size:14.5px;max-width:52ch}
+.camada .arrow{color:var(--ink-3);font-size:15px;transition:transform .3s ease,color .3s ease}
+.camada:hover .arrow{transform:translateX(5px);color:var(--clay)}
+
+/* ---------- curadoria ---------- */
+.curadoria{background:var(--paper-2)}
+.cur-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.cur-photo{position:relative;aspect-ratio:4/4.4;overflow:hidden}
+.cur-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.3,1)}
+.cur-photo:hover img{transform:scale(1.035)}
+.cur-txt h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,3.4vw,3.1rem);line-height:1.04;margin-bottom:22px}
+.cur-txt p{color:var(--ink-2);font-size:15.5px;margin-bottom:16px;max-width:48ch}
+.cur-list{list-style:none;margin-top:30px;border-top:1px solid var(--line)}
+.cur-list li{display:flex;gap:14px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+.cur-list li::before{content:"—";color:var(--clay);flex:none}
+
+/* ---------- galeria ---------- */
+.gal{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px;margin-top:52px}
+.gal figure{position:relative;overflow:hidden;background:var(--paper-2)}
+.gal figure:nth-child(1){aspect-ratio:4/5}
+.gal figure:nth-child(2){aspect-ratio:4/5;margin-top:44px}
+.gal figure:nth-child(3){aspect-ratio:4/5}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.3,1)}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{
+  position:absolute;left:0;bottom:0;background:var(--paper);padding:9px 14px;
+  font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);
+}
+
+/* ---------- showroom ---------- */
+.show{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);background:var(--paper)}
+.show-photo{overflow:hidden;min-height:420px}
+.show-photo img{width:100%;height:100%;object-fit:cover}
+.show-txt{padding:56px 52px;display:flex;flex-direction:column;justify-content:center;gap:20px}
+.show-txt h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.06}
+.show-txt address{font-style:normal;color:var(--ink-2);font-size:15px;line-height:1.75}
+.show-txt .hora{font-size:13px;color:var(--ink-3);letter-spacing:.02em}
+
+/* ---------- processo ---------- */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proc div{background:var(--paper);padding:34px 26px 38px}
+.proc .n{font-family:var(--serif);font-size:15px;color:var(--clay);display:block;margin-bottom:16px}
+.proc h4{font-family:var(--serif);font-weight:400;font-size:20px;margin-bottom:10px}
+.proc p{font-size:13.5px;color:var(--ink-3);line-height:1.6}
+
+/* ---------- CTA final ---------- */
+.final{background:var(--ink);color:var(--paper);padding:112px 0}
+.final .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.final h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,4.6vw,4.2rem);line-height:1;letter-spacing:-.01em}
+.final h2 em{font-style:italic;color:#D9A277}
+.final p{color:rgba(244,239,231,.72);font-size:15.5px;max-width:40ch;margin-top:20px}
+.final .acoes{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.btn-wa{background:var(--wp);color:#0B1F14;font-weight:600}
+.btn-wa:hover{background:#1FBE5B}
+.final .tel{font-size:13px;color:rgba(244,239,231,.6);letter-spacing:.05em}
+
+/* ---------- rodapé ---------- */
+footer{padding:44px 0;border-top:1px solid var(--line-2);background:var(--paper)}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--ink-3)}
+footer a:hover{color:var(--clay)}
+footer .cred{font-size:11px;color:var(--ink-3);opacity:.8;max-width:42ch}
+
+/* ---------- reveal ---------- */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
+.js .rv.in{opacity:1;transform:none}
+
+/* ---------- responsivo ---------- */
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-txt{padding:56px 0 44px;order:2}
+  .hero-photo{order:1;min-height:54vh}
+  .sec-head{grid-template-columns:1fr;gap:22px}
+  .sec-head p{justify-self:start}
+  .cur-grid,.final .wrap{grid-template-columns:1fr;gap:40px}
+  .cur-photo{aspect-ratio:16/12}
+  .show{grid-template-columns:1fr}
+  .show-photo{min-height:320px}
+  .show-txt{padding:40px 30px}
+  .prova .wrap{grid-template-columns:1fr 1fr}
+  .proc{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:1fr 1fr;gap:12px}
+  .gal figure:nth-child(2){margin-top:0}
+  .gal figure:nth-child(3){grid-column:span 2;aspect-ratio:16/9}
+  .camada{grid-template-columns:44px 1fr;gap:8px 18px}
+  .camada p{grid-column:2}
+  .camada .arrow{display:none}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 36px)}
+  .nav nav{display:none}
+  .sec{padding:68px 0}
+  .topbar .wrap{font-size:10px}
+  .topbar .end{display:none}
+  .prova .wrap{grid-template-columns:1fr}
+  .proc{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr}
+  .gal figure:nth-child(3){grid-column:auto;aspect-ratio:4/5}
+  .final{padding:76px 0}
+  .hero-badge{position:static;padding:18px 22px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .js .rv{opacity:1;transform:none}
+}
+
+/* ============ profundidade ============ */
+.nav{box-shadow:0 12px 34px -26px rgba(32,26,22,.55)}
+.gal figure,.cur-photo,.show{box-shadow:0 30px 64px -40px rgba(32,26,22,.6)}
+.hero-photo{box-shadow:inset 0 0 0 1px rgba(32,26,22,.06)}
+
+/* faixa escura: quebra a monotonia do papel e cria ritmo */
+#processo{padding-bottom:0}
+.proc{background:var(--ink);border-top:none;border-bottom:none;gap:1px}
+.proc div{background:var(--ink);padding:38px 30px 46px}
+.proc .n{color:#D9A277}
+.proc h4{color:var(--paper)}
+.proc p{color:rgba(244,239,231,.62)}
+#processo .proc{margin-top:44px}
+#processo .wrap{padding-bottom:3px}
+
+/* ============ mobile ============ */
+@media (max-width:640px){
+  .sec{padding:76px 0}
+  .hero-photo{min-height:44vh}
+  .hero-txt{padding:44px 0 40px;gap:22px}
+  .hero .btn,.final .btn{width:100%;justify-content:center;min-height:50px}
+  .hero-actions{gap:16px;width:100%}
+  .link-quiet{padding:12px 0;display:inline-block;min-height:44px}
+  .topbar .wrap{padding:4px 0 2px}
+  .topbar b a{display:inline-block;padding:12px 0;min-height:44px}
+  .nav .btn{min-height:46px;padding:12px 16px;font-size:12.5px}
+  .brand strong{font-size:22px}
+  footer a{display:inline-block;padding:8px 0;min-height:36px}
+  .camada{padding:24px 0;gap:6px 16px}
+  .camada h3{font-size:22px}
+  .cur-list li{padding:15px 0}
+  .show-txt{padding:34px 22px}
+  .show-txt .btn{width:100%;justify-content:center;min-height:50px}
+  .gal figcaption{font-size:9.5px;padding:8px 11px}
+  .final p{margin-top:16px}
+  .prova div{padding:22px 20px}
+  .proc div{padding:30px 22px 34px}
+}
+
+/* ================= CABECALHO NO MOBILE ================= */
+.barra-fixa{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:210;
+  align-items:center;justify-content:center;gap:10px;text-align:center;
+  padding:15px 18px calc(15px + env(safe-area-inset-bottom));
+  background:var(--ink);color:var(--paper);font-size:14.5px;font-weight:500;letter-spacing:.01em;
+  box-shadow:0 -20px 44px -30px rgba(32,26,22,.9);
+}
+.barra-fixa svg{width:18px;height:18px;fill:currentColor;flex:none}
+.barra-fixa:active{background:var(--clay)}
+
+@media (max-width:640px){
+  .nav .wrap{padding:12px 0;gap:12px;align-items:center}
+  .brand strong{font-size:23px;letter-spacing:0;line-height:1}
+  .brand span{font-size:8px;letter-spacing:.2em;white-space:nowrap;margin-top:5px}
+  /* botao vira icone: nada mais quebra em duas linhas */
+  .nav .btn{font-size:0;padding:0;width:46px;height:46px;min-height:46px;border-radius:50%;
+    justify-content:center;flex:none;box-shadow:0 10px 24px -14px rgba(32,26,22,.9)}
+  .nav .btn svg{width:20px;height:20px}
+  .brand{min-width:0}
+  .barra-fixa{display:flex}
+  body{padding-bottom:calc(62px + env(safe-area-inset-bottom))}
+  footer{padding-bottom:calc(28px + env(safe-area-inset-bottom))}
+}
+
+/* botao do cabecalho: icone centralizado */
+@media (max-width:640px){
+  .nav .btn .lbl{display:none}
+  .nav .btn{
+    display:flex;align-items:center;justify-content:center;
+    gap:0;line-height:0;padding:0;overflow:hidden;
+    width:46px;height:46px;min-height:46px;border-radius:50%;flex:none;
+  }
+  .nav .btn svg{width:22px;height:22px;display:block;margin:0;flex:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="end">Showroom · Rua Abel Pereira de Castro, 834 — Centro, Rio Verde/GO</span>
+    <span><b><a href="tel:+556499267464">(64) 99926-7464</a></b></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Art Nobre Interiores">
+      <strong>Art Nobre</strong>
+      <span>Interiores · desde 2019</span>
+    </a>
+    <nav>
+      <a href="#camadas">O que fazemos</a>
+      <a href="#curadoria">Curadoria</a>
+      <a href="#showroom">Showroom</a>
+      <a href="#processo">Como funciona</a>
+    </nav>
+    <a class="btn" href="https://wa.me/556499267464?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 1.8 1.1 2.1 1.3.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3Z"/></svg>
+      <span class="lbl">Orçamento no WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-txt rv">
+          <span class="eyebrow">Ambientes completos · Rio Verde/GO</span>
+          <h1>O ambiente inteiro,<br>do piso <em>ao teto</em>.</h1>
+          <p class="lead">
+            Móveis planejados, cortinas, persianas, cabeceiras, papel de parede e tapetes.
+            Em vez de você correr atrás de cinco fornecedores, um só time desenha, fornece e instala tudo — no mesmo projeto.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="https://wa.me/556499267464?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 1.8 1.1 2.1 1.3.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3Z"/></svg>
+              Pedir orçamento
+            </a>
+            <a class="link-quiet" href="#camadas">Ver o que fazemos</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1754611380518-61a923cc47ca?auto=format&fit=crop&w=1400&q=82"
+               alt="Cortinas de tecido com caimento até o piso em sala iluminada" fetchpriority="high">
+          <div class="hero-badge">
+            <span class="n">5,0</span>
+            <span class="t"><b>37 avaliações no Google</b>nota máxima em Rio Verde</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA -->
+  <div class="prova">
+    <div class="wrap">
+      <div><span class="k">5,0</span><span class="l">Avaliação no Google</span></div>
+      <div><span class="k">37</span><span class="l">Avaliações de clientes</span></div>
+      <div><span class="k">9 mil</span><span class="l">Seguidores no Instagram</span></div>
+      <div><span class="k">2019</span><span class="l">Desde a primeira obra</span></div>
+    </div>
+  </div>
+
+  <!-- CAMADAS -->
+  <section class="sec" id="camadas">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <span class="num">01 — O que fazemos</span>
+          <h2>Cinco camadas.<br>Um projeto só.</h2>
+        </div>
+        <p>
+          Quase todo mundo entrega uma parte. O móvel chega de um lugar, a cortina de outro,
+          o papel de parede de um terceiro — e no fim ninguém responde pelo conjunto.
+          Aqui as cinco camadas saem do mesmo desenho.
+        </p>
+      </div>
+
+      <div class="camadas">
+        <article class="camada rv">
+          <span class="idx">01</span>
+          <h3>Móveis planejados</h3>
+          <p>Cozinhas, closets, dormitórios e home offices desenhados na medida do ambiente — com ferragem e acabamento escolhidos junto com você.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </article>
+        <article class="camada rv">
+          <span class="idx">02</span>
+          <h3>Cortinas e persianas</h3>
+          <p>Tecido, caimento e altura de instalação definidos no projeto. É o que muda a percepção de pé-direito e de luz do ambiente inteiro.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </article>
+        <article class="camada rv">
+          <span class="idx">03</span>
+          <h3>Cabeceiras e estofados</h3>
+          <p>Cabeceira sob medida, com altura, forma e tecido combinando com o móvel do quarto — não comprada separada depois.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </article>
+        <article class="camada rv">
+          <span class="idx">04</span>
+          <h3>Papel de parede e revestimentos</h3>
+          <p>Padrão, textura e tom alinhados com a marcenaria. Aplicação por equipe própria, com preparo de parede.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </article>
+        <article class="camada rv">
+          <span class="idx">05</span>
+          <h3>Tapetes e têxteis</h3>
+          <p>O acabamento que amarra a paleta. Escolhido por último no projeto, mas previsto desde o começo.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURADORIA -->
+  <section class="sec curadoria" id="curadoria">
+    <div class="wrap">
+      <div class="cur-grid">
+        <div class="cur-photo rv">
+          <img src="https://images.unsplash.com/photo-1781888699751-15f2b304693c?auto=format&fit=crop&w=1000&q=82"
+               alt="Mãos selecionando amostras de tecido sobre uma mesa" loading="lazy" decoding="async">
+        </div>
+        <div class="cur-txt rv">
+          <span class="num">02 — Curadoria</span>
+          <h2>Você não escolhe no escuro.</h2>
+          <p>
+            Amostra de tecido na mão, à luz do seu ambiente, do lado do laminado que vai no móvel.
+            É assim que a decisão deixa de ser palpite e vira projeto.
+          </p>
+          <p>
+            A gente senta com você, entende a rotina da casa e monta a paleta do ambiente inteiro —
+            não só do móvel. O que não combina, a gente fala antes de fabricar.
+          </p>
+          <ul class="cur-list">
+            <li>Amostras físicas de tecido e acabamento</li>
+            <li>Projeto 3D do ambiente antes de qualquer corte</li>
+            <li>Uma pessoa responsável do primeiro desenho à instalação</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gal">
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1754611362309-71297e9f42fd?auto=format&fit=crop&w=900&q=80"
+               alt="Sala com cortina de tecido e paleta neutra" loading="lazy" decoding="async">
+          <figcaption>Cortinas sob medida</figcaption>
+        </figure>
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1774647001291-7b63c35d5edf?auto=format&fit=crop&w=900&q=80"
+               alt="Cabeceira estofada com acabamento decorativo" loading="lazy" decoding="async">
+          <figcaption>Cabeceiras estofadas</figcaption>
+        </figure>
+        <figure class="rv">
+          <img src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?auto=format&fit=crop&w=900&q=80"
+               alt="Sala de estar com sofá de couro e tapete" loading="lazy" decoding="async">
+          <figcaption>Tapetes e têxteis</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWROOM -->
+  <section class="sec" id="showroom">
+    <div class="wrap">
+      <div class="show rv">
+        <div class="show-photo">
+          <img src="https://images.unsplash.com/photo-1785535573662-417e82193598?auto=format&fit=crop&w=1000&q=82"
+               alt="Ambiente de showroom com poltrona, abajur e parede revestida" loading="lazy" decoding="async">
+        </div>
+        <div class="show-txt">
+          <span class="num">03 — Showroom</span>
+          <h2>Dá para ver de perto, no Centro.</h2>
+          <address>
+            Rua Abel Pereira de Castro, 834<br>
+            Centro — Rio Verde / GO
+          </address>
+          <p class="hora">Atendimento com hora marcada, para você não esperar.</p>
+          <a class="btn" href="https://wa.me/556499267464?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20ao%20showroom." target="_blank" rel="noopener">Agendar visita</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="sec" id="processo">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <span class="num">04 — Como funciona</span>
+          <h2>Do primeiro café<br>à última cortina.</h2>
+        </div>
+        <p>Quatro etapas, com prazo combinado por escrito em cada uma. Sem sumiço no meio do caminho.</p>
+      </div>
+    </div>
+    <div class="proc">
+      <div><span class="n">01</span><h4>Conversa e medida</h4><p>A gente vai até o ambiente, mede e entende como você usa a casa no dia a dia.</p></div>
+      <div><span class="n">02</span><h4>Projeto e curadoria</h4><p>Desenho em 3D e seleção de materiais, com amostra na mão. Você aprova antes de fabricar.</p></div>
+      <div><span class="n">03</span><h4>Fabricação e compra</h4><p>Marcenaria, tecidos e revestimentos entram em produção no mesmo cronograma.</p></div>
+      <div><span class="n">04</span><h4>Instalação completa</h4><p>Equipe própria instala móvel, cortina, cabeceira e acabamento. Você recebe o ambiente pronto.</p></div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <div class="rv">
+        <h2>Seu lar,<br><em>do seu jeito</em>.</h2>
+        <p>Manda uma foto do ambiente no WhatsApp. A gente te diz o que dá para fazer — e quanto custa — sem enrolação.</p>
+      </div>
+      <div class="acoes rv">
+        <a class="btn btn-wa" href="https://wa.me/556499267464?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20ambiente%20completo." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 1.8 1.1 2.1 1.3.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3Z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <span class="tel">ou ligue: (64) 99926-7464</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="font-family:var(--serif);font-size:17px;font-weight:400">Art Nobre Interiores</strong><br>
+      <a href="https://instagram.com/art_nobre_interiores_" target="_blank" rel="noopener">@art_nobre_interiores_</a> · Rio Verde / GO
+    </div>
+    <p class="cred">Fotos ilustrativas de banco de imagens — a substituir pelas fotos reais dos projetos.</p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+
+var io = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+}, { threshold: .12, rootMargin: '0px 0px -8% 0px' });
+
+document.querySelectorAll('.rv').forEach(function (el, i) {
+  el.style.transitionDelay = (Math.min(i % 4, 3) * 70) + 'ms';
+  io.observe(el);
+});
+
+/* segurança: se o observer falhar, nada fica invisível */
+setTimeout(function () {
+  document.querySelectorAll('.rv:not(.in)').forEach(function (el) {
+    var r = el.getBoundingClientRect();
+    if (r.top < innerHeight) el.classList.add('in');
+  });
+}, 1200);
+</script>
+<a class="barra-fixa" href="https://wa.me/556499267464?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.4A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.4.5c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 1.8 1.1 2.1 1.3.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3Z"/></svg>
+  <span>Orçamento no WhatsApp</span>
+</a>
+</body>
+</html>

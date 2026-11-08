@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encantalle Móveis Planejados — Rio Verde, GO</title>
+<meta name="description" content="Móveis planejados sob medida em Rio Verde e região. Projeto 3D, fabricação própria e instalação. Solicite seu orçamento.">
+<meta name="theme-color" content="#17120E">
+<meta name="robots" content="noindex,nofollow">
+
+<!--
+  ============================================================
+  MODELO DE PÁGINA PARA MARCENARIA / MÓVEIS PLANEJADOS
+  ------------------------------------------------------------
+  Para clonar para outro cliente, altere apenas o objeto
+  NEGOCIO no <script> no fim do arquivo.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#17120E;
+  --ink-2:#241C15;
+  --ink-3:#3A2E26;
+  --cream:#F6F0E5;
+  --cream-2:#EDE3D4;
+  --cream-3:#DFD2BE;
+  --gold:#C99A5B;
+  --gold-b:#E8B97C;
+  --green:#0F8A4D;
+  --green-d:#0A6C3B;
+  --wa:#25D366;
+  --muted-d:rgba(246,240,229,.58);
+  --muted-l:#6C6155;
+  --line-d:rgba(246,240,229,.16);
+  --line-l:rgba(23,18,14,.13);
+  --display:"Fraunces",Georgia,serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --max:1240px;
+  --pad:clamp(20px,5vw,64px);
+  --shadow-l:0 1px 2px rgba(23,18,14,.05),0 8px 24px -8px rgba(23,18,14,.14);
+  --shadow-xl:0 2px 4px rgba(23,18,14,.04),0 24px 60px -20px rgba(23,18,14,.30);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--cream);color:var(--ink);
+  font-family:var(--sans);font-size:clamp(15px,1.02vw,16.5px);line-height:1.62;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.028;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+img,svg{display:block;max-width:100%}
+.stroke{stroke:#2B2018;fill:none;stroke-width:1.7;vector-effect:non-scaling-stroke}
+.stroke-l{stroke:rgba(43,32,24,.32);fill:none;stroke-width:1.1;vector-effect:non-scaling-stroke}
+.fill-b{fill:rgba(201,154,91,.6)}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:300;line-height:1.03;letter-spacing:-.025em}
+p{margin:0}
+::selection{background:var(--gold);color:var(--ink)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad);position:relative;z-index:2}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:10.5px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor;opacity:.7}
+.dark .eyebrow{color:var(--gold-b)}
+
+/* ================= TOPBAR ================= */
+.topbar{background:var(--ink);color:rgba(246,240,229,.72);font-size:11.5px;letter-spacing:.08em}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:38px}
+.topbar span{display:inline-flex;align-items:center;gap:8px}
+.topbar b{color:var(--cream);font-weight:600}
+.topbar .sep{opacity:.3}
+.topbar a:hover{color:var(--gold-b)}
+
+/* ================= HEADER ================= */
+header{
+  position:sticky;top:0;z-index:100;background:var(--ink);
+  border-bottom:1px solid rgba(246,240,229,.10);
+  transition:padding .3s ease,box-shadow .3s ease,background .3s ease;
+}
+header.scrolled{box-shadow:0 12px 34px -18px rgba(0,0,0,.7);background:rgba(23,18,14,.97);backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:28px;height:82px;transition:height .3s ease}
+header.scrolled .nav{height:68px}
+.brand{display:flex;flex-direction:column;line-height:1;color:var(--cream)}
+.brand .n1{font-family:var(--display);font-size:22px;letter-spacing:-.01em}
+.brand .n2{font-size:9px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a:not(.btn){font-size:13.5px;color:rgba(246,240,229,.72);position:relative;padding:6px 0;font-weight:500}
+.menu a:not(.btn)::after{
+  content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--gold-b);
+  transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.22,.61,.36,1);
+}
+.menu a:not(.btn):hover{color:#fff}
+.menu a:not(.btn):hover::after{transform:scaleX(1)}
+
+/* ---------- BOTÃO PRINCIPAL (WhatsApp) ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:var(--sans);font-weight:700;letter-spacing:.01em;
+  border:1px solid transparent;border-radius:999px;cursor:pointer;
+  transition:transform .25s cubic-bezier(.22,.61,.36,1),background .25s,box-shadow .25s,color .25s,border-color .25s;
+}
+.btn-wa{
+  background:var(--wa);color:#08210F;
+  box-shadow:0 0 0 0 rgba(37,211,102,.55),0 6px 18px -6px rgba(37,211,102,.65);
+  animation:waPulse 2.8s cubic-bezier(.4,0,.6,1) infinite;
+}
+@keyframes waPulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.5),0 6px 18px -6px rgba(37,211,102,.6)}
+  55%{box-shadow:0 0 0 13px rgba(37,211,102,0),0 6px 18px -6px rgba(37,211,102,.6)}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 6px 18px -6px rgba(37,211,102,.6)}
+}
+.btn-wa:hover{background:#3ee37c;transform:translateY(-2px) scale(1.015);color:#06230D}
+.btn-wa svg{width:17px;height:17px;fill:currentColor;flex:none}
+.nav .btn-wa{padding:13px 24px;font-size:14px}
+.btn-cream{background:var(--cream);color:var(--ink);padding:16px 30px;font-size:14.5px}
+.btn-cream:hover{background:#fff;transform:translateY(-2px);box-shadow:var(--shadow-xl)}
+.btn-ghost{border-color:rgba(246,240,229,.32);color:var(--cream);padding:16px 28px;font-size:14.5px;font-weight:500}
+.btn-ghost:hover{border-color:var(--cream);background:rgba(246,240,229,.08)}
+.btn-wa-lg{padding:17px 32px;font-size:15px}
+.btn-wa-lg svg{width:19px;height:19px}
+
+/* ================= HERO ================= */
+.hero{
+  position:relative;background:var(--ink);color:var(--cream);overflow:hidden;
+  padding:clamp(44px,5.5vw,76px) 0 clamp(70px,8vw,110px);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(58% 52% at 78% 18%,rgba(201,154,91,.24),transparent 68%),
+    radial-gradient(46% 40% at 12% 88%,rgba(201,154,91,.12),transparent 70%),
+    radial-gradient(120% 70% at 50% 0%,rgba(255,255,255,.05),transparent 60%);
+}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(36px,5vw,80px);align-items:center}
+h1{
+  font-size:clamp(40px,5.7vw,80px);margin:20px 0 0;font-weight:300;letter-spacing:-.035em;
+  text-wrap:balance;
+}
+h1 .g{
+  background:linear-gradient(96deg,var(--gold-b) 0%,var(--gold) 45%,#A87C42 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  font-style:italic;font-weight:300;padding-right:.06em;
+}
+.hero .lead{margin-top:26px;font-size:clamp(15.5px,1.18vw,18px);color:var(--muted-d);max-width:44ch;line-height:1.6}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px;align-items:center}
+.hero-trust{display:flex;align-items:center;gap:14px;margin-top:34px;padding-top:26px;border-top:1px solid var(--line-d)}
+.avatars{display:flex}
+.avatars i{
+  width:30px;height:30px;border-radius:50%;border:2px solid var(--ink);margin-left:-9px;
+  background:linear-gradient(140deg,#C99A5B,#6E4F38);display:grid;place-items:center;
+  font-family:var(--display);font-size:11px;color:#fff;font-style:normal;
+}
+.avatars i:first-child{margin-left:0}
+.hero-trust p{font-size:12.5px;color:var(--muted-d);line-height:1.45}
+.hero-trust b{color:var(--cream);font-weight:600}
+
+/* ---------- MOLDURA DO AMBIENTE ---------- */
+.scene{position:relative}
+.scene-card{
+  position:relative;border-radius:6px;overflow:hidden;
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.85),0 0 0 1px rgba(246,240,229,.12);
+  aspect-ratio:4/4.55;
+}
+.scene-card svg{width:100%;height:100%;object-fit:cover}
+.scene-card::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to top,rgba(23,18,14,.55) 0%,transparent 38%);
+}
+.badge{
+  position:absolute;z-index:3;background:var(--cream);color:var(--ink);
+  border-radius:10px;box-shadow:0 18px 40px -14px rgba(0,0,0,.6);
+  display:flex;align-items:center;gap:11px;
+}
+.badge-rating{left:-18px;bottom:34px;padding:12px 18px 12px 14px;animation:floaty 6s ease-in-out infinite}
+.badge-3d{right:-14px;top:26px;padding:11px 16px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;animation:floaty 7s ease-in-out infinite reverse}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.badge .score{font-family:var(--display);font-size:27px;line-height:1;letter-spacing:-.03em}
+.badge .stars{display:flex;gap:2px;margin-bottom:3px}
+.badge .stars svg{width:11px;height:11px;fill:#E0A32E}
+.badge small{display:block;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted-l);margin-top:3px}
+.badge-3d span{display:flex;flex-direction:column;gap:2px}
+.badge-3d b{font-family:var(--display);font-size:15px;font-weight:400;letter-spacing:0}
+.badge-3d i{font-style:normal;font-size:9px;letter-spacing:.12em;color:var(--muted-l);font-weight:600}
+
+/* ================= STATS ================= */
+.stats{background:var(--cream);padding:0;position:relative;z-index:5}
+.stats-inner{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  background:var(--cream);border:1px solid var(--line-l);border-radius:10px;
+  margin-top:-38px;box-shadow:var(--shadow-xl);overflow:hidden;
+}
+.stats-inner div{padding:26px 18px;text-align:center;border-right:1px solid var(--line-l)}
+.stats-inner div:last-child{border-right:none}
+.stats-inner strong{display:block;font-family:var(--display);font-size:clamp(26px,2.6vw,34px);font-weight:400;letter-spacing:-.03em;line-height:1}
+.stats-inner span{display:block;margin-top:7px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-l);font-weight:600}
+
+/* ================= MARQUEE ================= */
+.marquee{
+  background:var(--cream-2);border-top:1px solid var(--line-l);border-bottom:1px solid var(--line-l);
+  overflow:hidden;padding:15px 0;margin-top:clamp(40px,5vw,64px);
+}
+.mq-track{display:flex;width:max-content;animation:mq 34s linear infinite}
+.marquee:hover .mq-track{animation-play-state:paused}
+.mq-track span{
+  display:inline-flex;align-items:center;gap:26px;padding-right:26px;
+  font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--muted-l);white-space:nowrap;
+}
+.mq-track span::after{content:"";width:5px;height:5px;background:var(--gold);transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ================= SECTIONS ================= */
+section.s{padding:clamp(58px,7.4vw,112px) 0}
+.sec-head{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(22px,4vw,60px);align-items:end;margin-bottom:clamp(34px,4.4vw,58px)}
+h2{font-size:clamp(29px,3.7vw,50px);margin-top:16px;font-weight:300}
+.sec-head p{color:var(--muted-l);max-width:46ch;font-size:15.5px}
+.dark{background:var(--ink);color:var(--cream)}
+.dark .sec-head p{color:var(--muted-d)}
+
+/* ================= AMBIENTES ================= */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{
+  background:#fff;border:1px solid var(--line-l);border-radius:12px;padding:26px 22px 0;
+  transition:transform .4s cubic-bezier(.22,.61,.36,1),box-shadow .4s,border-color .4s;
+  overflow:hidden;position:relative;
+}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:rgba(201,154,91,.5)}
+.card .num{font-family:var(--display);font-size:12px;letter-spacing:.1em;color:var(--gold);font-weight:600}
+.card h3{font-size:20px;margin:14px 0 9px;font-weight:400}
+.card p{font-size:13px;line-height:1.58;color:var(--muted-l);min-height:63px}
+.card .art{height:156px;margin:18px -22px 0;background:linear-gradient(170deg,var(--cream-2),var(--cream-3));overflow:hidden}
+.card .art img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.22,.61,.36,1)}
+.card:hover .art img{transform:scale(1.06)}
+
+/* ================= BENTO PROJETOS ================= */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.b{
+  position:relative;border-radius:12px;overflow:hidden;background:linear-gradient(165deg,#E9DDC9,#D8C6AC);
+  box-shadow:var(--shadow-l);transition:transform .45s cubic-bezier(.22,.61,.36,1),box-shadow .45s;
+}
+.b:hover{transform:translateY(-5px);box-shadow:var(--shadow-xl)}
+.b::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(130% 110% at 50% 0%,rgba(255,255,255,.10) 0%,transparent 45%,rgba(43,32,24,.34) 100%)}
+.b .inner{position:absolute;inset:0}
+.b .inner img,.scene-card img{width:100%;height:100%;object-fit:cover;display:block}
+.b .tag{
+  position:absolute;left:14px;bottom:12px;z-index:3;color:#2B2018;
+  font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  background:rgba(255,255,255,.88);backdrop-filter:blur(8px);padding:6px 11px;border-radius:999px;
+}
+.b .meta{
+  position:absolute;right:14px;top:12px;z-index:3;font-size:10px;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:rgba(43,32,24,.55);
+}
+.b1{grid-column:span 3;grid-row:span 2;min-height:380px;background:linear-gradient(160deg,#EADCC6,#CBB293 60%,#B79A78)}
+.b2{grid-column:span 3;aspect-ratio:2.05/1;background:linear-gradient(160deg,#EFE7D9,#DDD0BC)}
+.b3{grid-column:span 3;aspect-ratio:2.05/1;background:linear-gradient(160deg,#4C3B2E,#33261C)}
+.b4{grid-column:span 2;aspect-ratio:1/1;background:linear-gradient(160deg,#E4D7C2,#CDBBA2)}
+.b5{grid-column:span 2;aspect-ratio:1/1;background:linear-gradient(160deg,#EADFCB,#D6C6AD)}
+.b6{grid-column:span 2;aspect-ratio:1/1;background:linear-gradient(160deg,#3F322885,#2A2018)}
+.b3 .tag,.b6 .tag{background:rgba(23,18,14,.72);color:var(--cream)}
+.b3 .stroke,.b6 .stroke{stroke:rgba(246,240,229,.62)}
+.b3 .stroke-l,.b6 .stroke-l{stroke:rgba(246,240,229,.30)}
+.b3 .fill-b,.b6 .fill-b{fill:rgba(201,154,91,.55)}
+
+/* ================= PROCESSO ================= */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.6vw,34px);counter-reset:st}
+.step{position:relative;padding-top:26px;border-top:1px solid var(--line-d)}
+.step::before{content:"";position:absolute;top:-1px;left:0;width:34px;height:2px;background:var(--gold)}
+.step .n{font-family:var(--display);font-size:clamp(30px,3.6vw,44px);color:rgba(246,240,229,.16);line-height:1;letter-spacing:-.04em}
+.step h3{font-size:20px;margin:12px 0 10px;font-weight:400;color:var(--cream)}
+.step p{font-size:13px;line-height:1.6;color:var(--muted-d)}
+
+/* ================= REPUTAÇÃO ================= */
+.proof{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(28px,5vw,70px);align-items:center}
+.scorebox{background:#fff;border:1px solid var(--line-l);border-radius:14px;padding:clamp(26px,3vw,40px);box-shadow:var(--shadow-xl)}
+.bigscore{display:flex;align-items:flex-end;gap:14px}
+.bigscore .v{font-family:var(--display);font-size:clamp(58px,7.4vw,86px);line-height:.8;font-weight:300;letter-spacing:-.05em}
+.stars-lg{display:flex;gap:4px;margin-bottom:12px}
+.stars-lg svg{width:19px;height:19px;fill:#E0A32E}
+.scorebox p{margin-top:16px;color:var(--muted-l);font-size:14px}
+.scorebox a{color:var(--ink);border-bottom:1px solid var(--gold);padding-bottom:1px;font-weight:600}
+.scorebox a:hover{color:var(--gold)}
+.quote{border-left:2px solid var(--gold);padding-left:clamp(20px,3vw,34px)}
+.quote p{font-family:var(--display);font-size:clamp(21px,2.4vw,31px);line-height:1.36;letter-spacing:-.02em;font-weight:300;text-wrap:balance}
+.quote cite{display:block;margin-top:20px;font-style:normal;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-l);font-weight:600}
+
+/* ================= CTA FINAL ================= */
+.cta-final{
+  background:var(--ink);color:var(--cream);text-align:center;position:relative;overflow:hidden;
+  padding:clamp(70px,9vw,130px) 0;
+}
+.cta-final::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(60% 70% at 50% 0%,rgba(201,154,91,.22),transparent 70%);
+}
+.cta-final h2{font-size:clamp(32px,4.5vw,58px);max-width:22ch;margin:22px auto 0;font-weight:300;letter-spacing:-.03em}
+.cta-final p{margin:22px auto 0;color:var(--muted-d);max-width:46ch;font-size:15.5px}
+.cta-final .hero-cta{justify-content:center;margin-top:38px}
+.cta-final .phone{display:block;margin-top:26px;font-size:13px;color:var(--muted-d)}
+.cta-final .phone b{color:var(--cream);font-size:15px;letter-spacing:.02em}
+
+/* ================= FOOTER ================= */
+footer{background:var(--ink-2);color:rgba(246,240,229,.6);padding:clamp(44px,5vw,68px) 0 30px;font-size:13px;border-top:1px solid var(--line-d)}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:clamp(24px,4vw,56px)}
+footer h4{font-family:var(--sans);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:700}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+footer a:hover{color:var(--cream)}
+.legal{margin-top:44px;padding-top:22px;border-top:1px solid var(--line-d);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:11px;color:rgba(246,240,229,.38)}
+
+/* ================= FLUTUANTES ================= */
+.wa-float{
+  position:fixed;right:clamp(16px,2.4vw,30px);bottom:clamp(16px,2.4vw,30px);z-index:200;
+  width:62px;height:62px;border-radius:50%;background:var(--wa);color:#06230D;
+  display:grid;place-items:center;box-shadow:0 14px 34px -8px rgba(37,211,102,.6);
+  transition:transform .3s cubic-bezier(.22,.61,.36,1),background .3s;
+}
+.wa-float:hover{transform:scale(1.08) translateY(-2px);background:#3ee37c}
+.wa-float svg{width:31px;height:31px;fill:currentColor}
+.mobile-bar{display:none}
+
+/* ================= REVEAL ================= */
+.reveal{transition:opacity .75s cubic-bezier(.22,.61,.36,1),transform .75s cubic-bezier(.22,.61,.36,1);transition-delay:var(--d,0s)}
+.reveal.pre{opacity:0;transform:translateY(26px)}
+.reveal.pre.in{opacity:1;transform:none}
+
+/* ================= RESPONSIVO ================= */
+@media(max-width:1040px){
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .b1{grid-column:span 2;grid-row:auto;aspect-ratio:16/10;min-height:0}
+  .b2,.b3,.b4,.b5,.b6{grid-column:span 1;aspect-ratio:1/1;min-height:0}
+}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .scene{max-width:460px;margin:0 auto;width:100%}
+  .menu a:not(.btn){display:none}
+  .steps{grid-template-columns:repeat(2,1fr);gap:26px}
+  .proof{grid-template-columns:1fr}
+  .sec-head{grid-template-columns:1fr;align-items:start}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .badge-rating{left:0}
+  .badge-3d{right:0}
+  body{padding-bottom:74px}
+  .mobile-bar{
+    display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;
+    position:fixed;left:0;right:0;bottom:0;z-index:210;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(23,18,14,.96);backdrop-filter:blur(14px);border-top:1px solid rgba(246,240,229,.14);
+  }
+  .mobile-bar .btn{width:100%;padding:14px 18px;font-size:14.5px}
+  .mobile-bar a.call{
+    display:grid;place-items:center;width:52px;height:48px;border-radius:999px;
+    border:1px solid rgba(246,240,229,.3);color:var(--cream);
+  }
+  .mobile-bar a.call svg{width:19px;height:19px;fill:currentColor}
+  .wa-float{bottom:86px;width:54px;height:54px}
+  .wa-float svg{width:26px;height:26px}
+}
+@media(max-width:600px){
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .stats-inner div:nth-child(2){border-right:none}
+  .stats-inner div:nth-child(1),.stats-inner div:nth-child(2){border-bottom:1px solid var(--line-l)}
+  .grid-4{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr}
+  .b1,.b2,.b3,.b4,.b5,.b6{grid-column:span 1;aspect-ratio:4/3}
+  .steps{grid-template-columns:1fr}
+  .hero-cta .btn{width:100%}
+  .topbar .hide-s{display:none}
+  .btn-ghost{padding:15px 22px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .reveal.pre{opacity:1;transform:none}
+}
+
+/* ================= PROFUNDIDADE ================= */
+#hdr{box-shadow:0 18px 46px -34px rgba(0,0,0,.95)}
+.card,.b,.stats-inner{box-shadow:0 34px 74px -50px rgba(0,0,0,.95)}
+.b{overflow:hidden}
+.b .inner img{transition:transform 1.1s cubic-bezier(.22,.61,.36,1)}
+.b:hover .inner img{transform:scale(1.045)}
+.card{transition:transform .5s cubic-bezier(.22,.61,.36,1),box-shadow .5s}
+.card:hover{transform:translateY(-4px);box-shadow:0 44px 90px -52px rgba(0,0,0,1)}
+
+/* ================= MOBILE ================= */
+@media(max-width:900px){
+  /* botao do topo sem quebrar em 3 linhas */
+  .menu .btn{white-space:nowrap;padding:12px 16px;font-size:13px;line-height:1.2;min-height:46px}
+  .hero-grid{gap:34px}
+  .scene{max-width:100%;width:100%}
+}
+@media(max-width:600px){
+  /* a barra fixa embaixo ja carrega o CTA: o do topo so roubava espaco */
+  .menu .btn{display:none}
+  .hero-cta .btn{min-height:52px}
+  .bento{gap:10px}
+  .grid-4{gap:12px}
+  .stats-inner div{padding:22px 16px}
+  footer a{display:inline-block;padding:7px 0}
+}
+</style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Atendemos <b data-campo="cidade">Rio Verde</b> e região · Projeto 3D sem custo</span>
+    <span class="hide-s"><span class="sep">|</span> <a href="#" data-link="whatsapp"><b data-campo="telefone">(64) 99214-7837</b></a></span>
+  </div>
+</div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#" class="brand" aria-label="Início">
+      <span class="n1" data-campo="nome">Encantalle Móveis Planejados</span>
+      <span class="n2">Marcenaria sob medida</span>
+    </a>
+    <nav class="menu" aria-label="Navegação principal">
+      <a href="#ambientes">Ambientes</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#processo">Processo</a>
+      <a class="btn btn-wa" href="#" data-link="whatsapp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.44 1.32 4.94L2 22l5.36-1.4a9.8 9.8 0 0 0 4.68 1.19h.01c5.43 0 9.84-4.4 9.84-9.84a9.78 9.78 0 0 0-2.88-6.96A9.78 9.78 0 0 0 12.04 2Zm5.76 14c-.24.68-1.4 1.3-1.93 1.35-.53.05-1.03.24-3.48-.73-2.95-1.17-4.8-4.25-4.94-4.44-.15-.2-1.17-1.57-1.17-3s.75-2.13 1.01-2.42c.26-.3.57-.37.77-.37h.55c.18 0 .41-.03.63.48l.86 2.09c.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.18.3.79 1.3 1.69 2.11 1.16 1.03 1.9 1.35 2.17 1.5.27.15.43.13.59-.08.16-.2.68-.79.86-1.06.18-.27.36-.22.6-.13l2.02.95c.24.12.4.17.46.27.06.1.06.6-.18 1.28Z"/></svg>
+        Orçamento no WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow"><span data-campo="cidade">Rio Verde</span> · <span data-campo="uf">GO</span></span>
+        <h1>O ambiente que você imaginou, <span class="g">executado no milímetro.</span></h1>
+        <p class="lead">Projetamos, fabricamos e instalamos móveis planejados sob medida. Você aprova em 3D antes de qualquer corte — e recebe no prazo combinado, por escrito.</p>
+        <div class="hero-cta">
+          <a class="btn btn-wa btn-wa-lg" href="#" data-link="whatsapp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.44 1.32 4.94L2 22l5.36-1.4a9.8 9.8 0 0 0 4.68 1.19h.01c5.43 0 9.84-4.4 9.84-9.84a9.78 9.78 0 0 0-2.88-6.96A9.78 9.78 0 0 0 12.04 2Zm5.76 14c-.24.68-1.4 1.3-1.93 1.35-.53.05-1.03.24-3.48-.73-2.95-1.17-4.8-4.25-4.94-4.44-.15-.2-1.17-1.57-1.17-3s.75-2.13 1.01-2.42c.26-.3.57-.37.77-.37h.55c.18 0 .41-.03.63.48l.86 2.09c.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.18.3.79 1.3 1.69 2.11 1.16 1.03 1.9 1.35 2.17 1.5.27.15.43.13.59-.08.16-.2.68-.79.86-1.06.18-.27.36-.22.6-.13l2.02.95c.24.12.4.17.46.27.06.1.06.6-.18 1.28Z"/></svg>
+            Pedir orçamento agora
+          </a>
+          <a class="btn btn-ghost" href="#projetos">Ver projetos</a>
+        </div>
+        <div class="hero-trust">
+          <div class="avatars" aria-hidden="true"><i>M</i><i>R</i><i>A</i><i>J</i></div>
+          <p><b><span data-campo="nota">5,0</span> no Google</b> com <span data-campo="avaliacoes">57</span> avaliações<br>Fábrica e equipe de instalação próprias</p>
+        </div>
+      </div>
+
+      <div class="scene reveal" style="--d:.12s">
+        <div class="scene-card"><img src="https://images.unsplash.com/photo-1628797285815-453c1d0d21e3?auto=format&fit=crop&w=1000&q=82" alt="Cozinha planejada em madeira com ilha e bancos" decoding="async">
+        </div>
+
+        <div class="badge badge-rating">
+          <div>
+            <div class="stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+            </div>
+            <span class="score" data-campo="nota">5,0</span>
+            <small><span data-campo="avaliacoes">57</span> avaliações no Google</small>
+          </div>
+        </div>
+
+        <div class="badge badge-3d">
+          <span><b>Projeto 3D</b><i>antes de produzir</i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <div class="stats">
+    <div class="wrap">
+      <div class="stats-inner reveal">
+        <div><strong data-campo="nota">5,0</strong><span>Nota no Google</span></div>
+        <div><strong data-campo="avaliacoes">57</strong><span>Avaliações reais</span></div>
+        <div><strong>3D</strong><span>Projeto incluso</span></div>
+        <div><strong>Própria</strong><span>Fabricação</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="mq-track">
+      <span>Carvalho</span><span>Nogueira</span><span>Grafite</span><span>Branco Mate</span><span>Freijó</span><span>Cinza Cristal</span><span>Ferragens Blum</span><span>MDF Premium</span>
+      <span>Carvalho</span><span>Nogueira</span><span>Grafite</span><span>Branco Mate</span><span>Freijó</span><span>Cinza Cristal</span><span>Ferragens Blum</span><span>MDF Premium</span>
+    </div>
+  </div>
+
+  <!-- ================= AMBIENTES ================= -->
+  <section class="s" id="ambientes">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">01 — Ambientes</span>
+          <h2>Cada canto da casa,<br>medido no milímetro.</h2>
+        </div>
+        <p>Ambiente pequeno não é desculpa para móvel apertado. Projetamos a partir da planta real do imóvel — e transformamos o canto que hoje é área perdida em armário útil.</p>
+      </div>
+
+      <div class="grid-4">
+        <article class="card reveal">
+          <div class="num">01</div>
+          <h3>Cozinhas</h3>
+          <p>Aproveitamento total, eletrodomésticos embutidos e ferragens com fechamento suave.</p>
+          <div class="art"><img src="https://images.unsplash.com/photo-1602028915047-37269d1a73f7?auto=format&fit=crop&w=800&q=78" alt="Cozinha planejada com armários e ilha central" loading="lazy" decoding="async"></div>
+        </article>
+        <article class="card reveal" style="--d:.07s">
+          <div class="num">02</div>
+          <h3>Closets e quartos</h3>
+          <p>Gavetas, cabideiros e divisórias pensados para o que você realmente usa todo dia.</p>
+          <div class="art"><img src="https://images.unsplash.com/photo-1640357154220-9775b0f31dec?auto=format&fit=crop&w=800&q=78" alt="Closet planejado com piso de madeira" loading="lazy" decoding="async"></div>
+        </article>
+        <article class="card reveal" style="--d:.14s">
+          <div class="num">03</div>
+          <h3>Salas e home office</h3>
+          <p>Painéis, estantes e estações de trabalho que somem quando o expediente acaba.</p>
+          <div class="art"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=78" alt="Sala de estar planejada com janela ampla" loading="lazy" decoding="async"></div>
+        </article>
+        <article class="card reveal" style="--d:.21s">
+          <div class="num">04</div>
+          <h3>Áreas gourmet</h3>
+          <p>Bancadas, ilhas e adegas com acabamento resistente a calor e umidade.</p>
+          <div class="art"><img src="https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?auto=format&fit=crop&w=800&q=78" alt="Área gourmet com ilha e armários" loading="lazy" decoding="async"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJETOS ================= -->
+  <section class="s" id="projetos" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">02 — Projetos</span>
+          <h2>Ambientes entregues.</h2>
+        </div>
+        <p>Uma amostra do que sai da nossa fábrica: projetos fechados, medidos e instalados pela nossa própria equipe.</p>
+      </div>
+
+      <div class="bento">
+        <article class="b b1 reveal">
+          <div class="meta">Cozinha</div>
+          <div class="inner"><img src="https://images.unsplash.com/photo-1771371854543-bb274762389e?auto=format&fit=crop&w=1200&q=80" alt="Cozinha planejada clara com ilha central e janela ampla" loading="lazy" decoding="async"></div>
+          <div class="tag">Cozinha em L</div>
+        </article>
+
+        <article class="b b2 reveal" style="--d:.08s">
+          <div class="meta">Closet</div>
+          <div class="inner"><img src="https://images.unsplash.com/photo-1672137233327-37b0c1049e77?auto=format&fit=crop&w=1200&q=80" alt="Closet planejado com espelho e banco central" loading="lazy" decoding="async"></div>
+          <div class="tag">Closet aberto</div>
+        </article>
+
+        <article class="b b3 reveal" style="--d:.14s">
+          <div class="meta" style="color:rgba(246,240,229,.5)">Home office</div>
+          <div class="inner"><img src="https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?auto=format&fit=crop&w=1200&q=80" alt="Home office com bancada de madeira e prateleiras" loading="lazy" decoding="async"></div>
+          <div class="tag">Home office</div>
+        </article>
+
+        <article class="b b4 reveal" style="--d:.2s">
+          <div class="meta">Nichos</div>
+          <div class="inner"><img src="https://images.unsplash.com/photo-1618236444721-4a8dba415c15?auto=format&fit=crop&w=1200&q=80" alt="Nichos e vitrine planejados com iluminação interna" loading="lazy" decoding="async"></div>
+          <div class="tag">Nichos e vitrine</div>
+        </article>
+
+        <article class="b b5 reveal" style="--d:.26s">
+          <div class="meta">Quarto</div>
+          <div class="inner"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80" alt="Quarto com cabeceira planejada e iluminação indireta" loading="lazy" decoding="async"></div>
+          <div class="tag">Quarto do casal</div>
+        </article>
+
+        <article class="b b6 reveal" style="--d:.32s">
+          <div class="meta" style="color:rgba(246,240,229,.5)">Gourmet</div>
+          <div class="inner"><img src="https://images.unsplash.com/photo-1768486143865-342d8cc12c90?auto=format&fit=crop&w=1200&q=80" alt="Cozinha gourmet com ilha e pendentes" loading="lazy" decoding="async"></div>
+          <div class="tag">Ilha gourmet</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESSO ================= -->
+  <section class="s dark" id="processo">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">03 — Processo</span>
+          <h2>Quatro etapas,<br>nenhuma surpresa.</h2>
+        </div>
+        <p>Móvel planejado dá errado quando alguém promete prazo que não controla. Por isso fabricação e instalação são nossas, do começo ao fim.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="n">01</div><h3>Medição no local</h3>
+          <p>Vamos até você, medimos cada parede e ouvimos como você usa o ambiente no dia a dia.</p>
+        </div>
+        <div class="step reveal" style="--d:.08s">
+          <div class="n">02</div><h3>Projeto 3D</h3>
+          <p>Você vê o ambiente pronto, com acabamento e medidas reais. Nada é cortado sem sua aprovação.</p>
+        </div>
+        <div class="step reveal" style="--d:.16s">
+          <div class="n">03</div><h3>Fabricação</h3>
+          <p>Produção própria em MDF de primeira linha, com prazo combinado por escrito.</p>
+        </div>
+        <div class="step reveal" style="--d:.24s">
+          <div class="n">04</div><h3>Instalação</h3>
+          <p>Equipe própria instala, regula portas e gavetas e entrega o ambiente limpo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REPUTAÇÃO ================= -->
+  <section class="s" id="reputacao">
+    <div class="wrap proof">
+      <div class="scorebox reveal">
+        <span class="eyebrow">04 — Reputação</span>
+        <div class="bigscore" style="margin-top:22px">
+          <span class="v" data-campo="nota">5,0</span>
+          <div>
+            <div class="stars-lg" aria-label="5 de 5 estrelas">
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2 2 9.3l6.9-1L12 2Z"/></svg>
+            </div>
+            <p style="margin:0;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-l);font-weight:600">Nota máxima no Google</p>
+          </div>
+        </div>
+        <p>Nota máxima com <strong data-campo="avaliacoes">57</strong> avaliações de clientes em <span data-campo="cidade">Rio Verde</span>.<br>
+        <a href="#" data-link="maps">Ler os comentários no Google →</a></p>
+      </div>
+      <div class="quote reveal" style="--d:.1s">
+        <p>“Reputação não se compra: se constrói uma cozinha por vez, com o prazo que foi combinado.”</p>
+        <cite>Marcenaria sob medida · <span data-campo="cidade">Rio Verde</span>, <span data-campo="uf">GO</span></cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="cta-final" id="contato">
+    <div class="wrap">
+      <span class="eyebrow" style="justify-content:center">Vamos começar</span>
+      <h2>Mande a planta do seu ambiente e receba a proposta.</h2>
+      <p>Envie as medidas, uma foto do espaço e o que você imaginou. Devolvemos o projeto e um prazo real — sem compromisso.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa btn-wa-lg" href="#" data-link="whatsapp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.44 1.32 4.94L2 22l5.36-1.4a9.8 9.8 0 0 0 4.68 1.19h.01c5.43 0 9.84-4.4 9.84-9.84a9.78 9.78 0 0 0-2.88-6.96A9.78 9.78 0 0 0 12.04 2Zm5.76 14c-.24.68-1.4 1.3-1.93 1.35-.53.05-1.03.24-3.48-.73-2.95-1.17-4.8-4.25-4.94-4.44-.15-.2-1.17-1.57-1.17-3s.75-2.13 1.01-2.42c.26-.3.57-.37.77-.37h.55c.18 0 .41-.03.63.48l.86 2.09c.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.18.3.79 1.3 1.69 2.11 1.16 1.03 1.9 1.35 2.17 1.5.27.15.43.13.59-.08.16-.2.68-.79.86-1.06.18-.27.36-.22.6-.13l2.02.95c.24.12.4.17.46.27.06.1.06.6-.18 1.28Z"/></svg>
+          Falar no WhatsApp agora
+        </a>
+        <a class="btn btn-ghost" href="#" data-link="maps">Ver no Google</a>
+      </div>
+      <span class="phone">ou ligue: <b data-campo="telefone">(64) 99214-7837</b></span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="color:var(--cream);margin-bottom:16px">
+          <span class="n1" style="font-size:20px" data-campo="nome">Encantalle Móveis Planejados</span>
+          <span class="n2">Marcenaria sob medida</span>
+        </div>
+        <p style="max-width:34ch">Projetos, fabricação e instalação de móveis planejados em <span data-campo="cidade">Rio Verde</span> e região.</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#" data-link="whatsapp" data-campo="telefone">(64) 99214-7837</a></li>
+          <li><a href="#" data-link="instagram">@<span data-campo="instagram">encantallemoveis</span></a></li>
+          <li><a href="#" data-link="maps">Google Maps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul>
+          <li><span data-campo="cidade">Rio Verde</span> · <span data-campo="uf">GO</span></li>
+          <li>Projetos sob medida</li>
+          <li>Orçamento sem compromisso</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="ano">2026</span> <span data-campo="nome">Encantalle Móveis Planejados</span>. Todos os direitos reservados.</span>
+      <span>Fotos ilustrativas de banco de imagens — a substituir pelas fotos reais dos projetos.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-link="whatsapp" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.44 1.32 4.94L2 22l5.36-1.4a9.8 9.8 0 0 0 4.68 1.19h.01c5.43 0 9.84-4.4 9.84-9.84a9.78 9.78 0 0 0-2.88-6.96A9.78 9.78 0 0 0 12.04 2Zm5.76 14c-.24.68-1.4 1.3-1.93 1.35-.53.05-1.03.24-3.48-.73-2.95-1.17-4.8-4.25-4.94-4.44-.15-.2-1.17-1.57-1.17-3s.75-2.13 1.01-2.42c.26-.3.57-.37.77-.37h.55c.18 0 .41-.03.63.48l.86 2.09c.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.18.3.79 1.3 1.69 2.11 1.16 1.03 1.9 1.35 2.17 1.5.27.15.43.13.59-.08.16-.2.68-.79.86-1.06.18-.27.36-.22.6-.13l2.02.95c.24.12.4.17.46.27.06.1.06.6-.18 1.28Z"/></svg>
+</a>
+
+<div class="mobile-bar">
+  <a class="btn btn-wa" href="#" data-link="whatsapp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.44 1.32 4.94L2 22l5.36-1.4a9.8 9.8 0 0 0 4.68 1.19h.01c5.43 0 9.84-4.4 9.84-9.84a9.78 9.78 0 0 0-2.88-6.96A9.78 9.78 0 0 0 12.04 2Zm5.76 14c-.24.68-1.4 1.3-1.93 1.35-.53.05-1.03.24-3.48-.73-2.95-1.17-4.8-4.25-4.94-4.44-.15-.2-1.17-1.57-1.17-3s.75-2.13 1.01-2.42c.26-.3.57-.37.77-.37h.55c.18 0 .41-.03.63.48l.86 2.09c.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.18.3.79 1.3 1.69 2.11 1.16 1.03 1.9 1.35 2.17 1.5.27.15.43.13.59-.08.16-.2.68-.79.86-1.06.18-.27.36-.22.6-.13l2.02.95c.24.12.4.17.46.27.06.1.06.6-.18 1.28Z"/></svg>
+    Pedir orçamento
+  </a>
+  <a class="call" href="#" data-link="whatsapp" aria-label="Ligar">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V19c0 .6-.4 1-1 1C10.4 20 4 13.6 4 5.7c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2 2Z"/></svg>
+  </a>
+</div>
+
+<script>
+/* ============================================================
+   CONFIGURAÇÃO DO CLIENTE — altere só este bloco para clonar
+   ============================================================ */
+const NEGOCIO = {
+  nome:      "Encantalle Móveis Planejados",
+  cidade:    "Rio Verde",
+  uf:        "GO",
+  telefone:  "(64) 99214-7837",
+  whatsapp:  "5564992147837",
+  instagram: "encantallemoveis",
+  nota:      "5,0",
+  avaliacoes: "57",
+  maps:      "https://www.google.com/maps/search/Encantalle+M%C3%B3veis+Planejados+Rio+Verde+GO",
+  mensagem:  "Olá! Vi o site de vocês e gostaria de um orçamento de móveis planejados."
+};
+
+/* ---- dados ---- */
+document.querySelectorAll("[data-campo]").forEach(function (el) {
+  var k = el.getAttribute("data-campo");
+  if (NEGOCIO[k] !== undefined) el.textContent = NEGOCIO[k];
+});
+
+/* ---- links ---- */
+var links = {
+  whatsapp:  "https://wa.me/" + NEGOCIO.whatsapp + "?text=" + encodeURIComponent(NEGOCIO.mensagem),
+  instagram: "https://instagram.com/" + NEGOCIO.instagram,
+  maps:      NEGOCIO.maps
+};
+document.querySelectorAll("[data-link]").forEach(function (el) {
+  var d = links[el.getAttribute("data-link")];
+  if (!d) return;
+  el.setAttribute("href", d);
+  if (el.getAttribute("data-link") !== "maps") {
+    el.setAttribute("target", "_blank");
+    el.setAttribute("rel", "noopener noreferrer");
+  }
+});
+
+document.getElementById("ano").textContent = new Date().getFullYear();
+document.title = NEGOCIO.nome + " — " + NEGOCIO.cidade + ", " + NEGOCIO.uf;
+
+/* ---- header encolhe ---- */
+var hdr = document.getElementById("hdr");
+addEventListener("scroll", function () {
+  hdr.classList.toggle("scrolled", scrollY > 24);
+}, { passive: true });
+
+/* ---- reveal on scroll (nunca esconde conteudo de forma permanente) ---- */
+(function () {
+  var alvos = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+  var dobra = window.innerHeight * 0.94;
+
+  /* esconde apenas o que esta abaixo da dobra */
+  var escondidos = alvos.filter(function (el) {
+    if (el.getBoundingClientRect().top > dobra) {
+      el.classList.add("pre");
+      return true;
+    }
+    return false;
+  });
+
+  function revelarTudo() {
+    escondidos.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  if (!escondidos.length || !("IntersectionObserver" in window)) { return; }
+
+  try {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.05, rootMargin: "0px 0px -4% 0px" });
+
+    escondidos.forEach(function (el) { io.observe(el); });
+
+    /* rede de seguranca: se nada revelar em 1,5s, mostra tudo */
+    setTimeout(function () {
+      if (!document.querySelector(".reveal.pre.in")) { revelarTudo(); }
+    }, 1500);
+  } catch (err) {
+    revelarTudo();
+  }
+
+  /* ultima garantia */
+  setTimeout(revelarTudo, 5000);
+})();
+</script>
+</body>
+</html>

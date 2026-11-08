@@ -134,11 +134,10 @@ section{padding:clamp(54px,7.5vw,100px) 0}
   border-left:2px solid var(--linha)}
 
 /* galeria */
-.gal{display:grid;grid-template-columns:1fr 1fr .85fr;gap:16px;margin-top:44px;align-items:end}
+.gal{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin-top:44px;align-items:end}
 .gal figure{margin:0;border-radius:8px;overflow:hidden;box-shadow:var(--sombra-2);aspect-ratio:3/3.6;
   background:var(--creme-2)}
-.gal figure:nth-child(2){aspect-ratio:3/2.7;align-self:start;margin-top:34px}
-.gal figure:nth-child(3){aspect-ratio:3/4}
+.gal figure:nth-child(2){aspect-ratio:3/3;align-self:start;margin-top:34px}
 .gal img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease}
 .gal figure:hover img{transform:scale(1.07)}
 
@@ -168,7 +167,6 @@ footer{background:var(--ink);color:#BFB2AE;padding:46px 0 42px;font-size:.84rem}
   .item p{grid-column:2}
   .gal{grid-template-columns:1fr 1fr}
   .gal figure:nth-child(2){margin-top:0}
-  .gal figure:nth-child(3){display:none}
 }
 @media (max-width:640px){
   body{font-size:16px;line-height:1.66}
@@ -185,7 +183,6 @@ footer{background:var(--ink);color:#BFB2AE;padding:46px 0 42px;font-size:.84rem}
   .item{grid-template-columns:40px 1fr}
   .gal{grid-template-columns:1fr}
   .gal figure{aspect-ratio:16/11}
-  .gal figure:nth-child(3){display:block;aspect-ratio:16/11}
   .cartao{padding:24px}
   footer{padding-bottom:104px}
   .barra{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;
@@ -339,7 +336,6 @@ footer{background:var(--ink);color:#BFB2AE;padding:46px 0 42px;font-size:.84rem}
         <h2>Um lugar calmo para resolver algo que incomoda há anos.</h2>
       </div>
       <div class="gal">
-        <figure><img src="https://images.unsplash.com/photo-1758599543111-36ce5c34fceb?w=900&q=80&fm=jpg&fit=crop" alt="Paciente sorrindo em frente ao consultório" loading="lazy"></figure>
         <figure><img src="https://images.unsplash.com/photo-1670250492416-570b5b7343b1?w=900&q=80&fm=jpg&fit=crop" alt="Detalhe de dentes naturais em close" loading="lazy"></figure>
         <figure><img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80&fm=jpg&fit=crop" alt="Cadeira odontológica em consultório equipado" loading="lazy"></figure>
       </div>

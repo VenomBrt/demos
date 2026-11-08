@@ -51,8 +51,9 @@ header{position:sticky;top:0;z-index:40;background:rgba(251,249,245,.86);
   background:linear-gradient(150deg,#1B3A33,#2F6B59);color:#F7F4EC;
   display:grid;place-items:center;font-family:'Newsreader',serif;font-size:1rem;
   letter-spacing:.04em;box-shadow:var(--shadow-s)}
-.marca-txt{min-width:0}
-.marca-nome{font-family:'Newsreader',serif;font-size:1.12rem;line-height:1.15;white-space:nowrap}
+.marca-txt{min-width:0;overflow:hidden}
+.marca-nome{font-family:'Newsreader',serif;font-size:1.12rem;line-height:1.15;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
 .marca-sub{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .nav-links{display:flex;gap:26px;font-size:.92rem;color:var(--ink-soft)}
 .nav-links a{position:relative;padding:4px 0}
@@ -195,10 +196,13 @@ footer{background:var(--ink);color:#B9C0BA;padding:44px 0 40px;font-size:.86rem}
 @media (max-width:640px){
   body{font-size:16px}
   .wrap{padding:0 18px}
-  .nav{height:68px}
+  .nav{height:66px}
   .nav .btn{display:none}
-  .marca-nome{font-size:1rem}
-  .hero{padding-top:26px}
+  .marca-sub{display:none}
+  .marca-nome{font-size:1.06rem;white-space:nowrap}
+  .monograma{width:36px;height:36px;font-size:.92rem}
+  .hero{padding-top:22px}
+  .hero h1{margin-top:12px}
   .hero-img{aspect-ratio:4/3.6;border-radius:18px}
   .hero-acoes .btn{flex:1 1 auto;justify-content:center}
   .etapas,.trat-grid{grid-template-columns:1fr}
